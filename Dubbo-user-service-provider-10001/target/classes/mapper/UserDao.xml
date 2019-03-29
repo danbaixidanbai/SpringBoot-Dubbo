@@ -10,7 +10,7 @@
     </select>
     <select id="queryUserById" resultType="com.ouxuxi.entity.User">
         SELECT id,username,password
-        FROM user
+        FROM users
         WHERE id=#{id};
     </select>
 </mapper>

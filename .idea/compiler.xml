@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Dubboapi" />
+        <module name="DubboConsumer" />
         <module name="Dubbouserserviceprovider10001" />
       </profile>
     </annotationProcessing>

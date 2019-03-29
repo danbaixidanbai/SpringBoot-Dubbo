@@ -10,6 +10,7 @@
     <modules>
         <module>Dubbo-api</module>
         <module>Dubbo-user-service-provider-10001</module>
+        <module>Dubbo-Consumer</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,10 +23,10 @@
     <!-- dependencyManagement 可以把所有子模块用到的依赖都声明在此包括版本号，然后子模块需要显式的引用但不需要配置版本号！！！ -->
     <dependencyManagement>
         <dependencies>
-            <dependency>
+            <!--<dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
+            </dependency>-->
             <!--热部署配置-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
