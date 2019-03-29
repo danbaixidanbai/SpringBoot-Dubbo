@@ -12,10 +12,17 @@
     <artifactId>Dubbo-user-service-provider-10001</artifactId>
 
     <dependencies>
-        <!--自己的包-->
+        <!--Dubbo-api-->
         <dependency>
-            <groupId>com.danbaixi</groupId>
-            <artifactId>Dubbo-api</artifactId>
+        <groupId>com.danbaixi</groupId>
+        <artifactId>Dubbo-api</artifactId>
+        <version>1.0-SNAPSHOTd</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <!--springboot-->
         <dependency>
@@ -26,6 +33,7 @@
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
+            <!--<version>0.2.0</version>-->
         </dependency>
         <!--myabtis-->
         <dependency>
@@ -42,5 +50,26 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.2.0.BUILD-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.2.0.BUILD-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 </project>

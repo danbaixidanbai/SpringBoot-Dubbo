@@ -1,0 +1,41 @@
+server:
+  port: 10001
+
+## spirng boot 相关配置
+spring:
+  application:
+    name: dubbo-user-provider # 服务提供者名字
+  datasource:
+    #   数据源基本配置
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# dubbo 相关配置， 服务注册
+dubbo:
+  #dubbo提供者的别名，只是个标识
+  application:
+    name: dubbo-user-service-provider
+  #注册中心类型和地址
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+  #dubbo协议和端口
+  protocol:
+    name: dubbo
+    port: 10001
+
+mybatis:
+  # 指定全局配置文件位置
+  #config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mapper/*.xml
+  # 别名配置
+  #type-aliases-package: cn.jsxwsl.dubbo.bean
+
+#显示sql语句
+logging:
+  level:
+    com.ouxuxi.Spring-Dubbo.bean: debug
